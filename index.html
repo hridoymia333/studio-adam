@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171612">
+  <meta name="description" content="জয়দেবপুর, গাজীপুরে Studio Adam পুরুষদের সেলুন। হেয়ারকাট, দাড়ি ট্রিম ও গ্রুমিংয়ের জন্য ফোন বা WhatsApp-এ সময় ঠিক করুন।">
+  <meta property="og:title" content="Studio Adam | Men's Salon in Joydebpur">
+  <meta property="og:description" content="হেয়ারকাট, দাড়ি ট্রিম ও গ্রুমিং। জয়দেবপুর, গাজীপুর।">
+  <title>Studio Adam | Men's Salon in Joydebpur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #171612;
+      --panel: #24201c;
+      --cream: #f3ecdf;
+      --muted: #cac1b1;
+      --gold: #efbe82;
+      --rule: #5a4e40;
+      --display: "Instrument Serif", Georgia, serif;
+      scroll-behavior: smooth;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; padding-bottom: calc(76px + env(safe-area-inset-bottom)); background: var(--ink); color: var(--cream); font: 1.0625rem/1.55 "Hind Siliguri", system-ui, sans-serif; }
+    img { display: block; width: 100%; object-fit: cover; background: var(--panel); }
+    a { color: inherit; text-underline-offset: .22em; }
+    a:hover { color: var(--gold); }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+    h1, h2, h3, p, figure, blockquote, dl, dd { margin: 0; }
+    h1, h2, h3 { line-height: 1.13; }
+    h1 { font-size: clamp(3.2rem, 9vw, 6.4rem); letter-spacing: -.035em; }
+    h2 { font-size: clamp(2.05rem, 5vw, 3.6rem); margin-bottom: .65rem; }
+    h3 { font-size: 1.34rem; }
+    section[id] { scroll-margin-top: 1rem; }
+    .wrap { width: min(100% - 2.25rem, 72rem); margin-inline: auto; }
+    .section { padding-block: clamp(3.4rem, 8vw, 6.6rem); }
+    .quiet { color: var(--muted); }
+    .note { color: var(--muted); font-size: .95rem; }
+    .eyebrow { color: var(--gold); font: 600 .86rem/1.35 system-ui, sans-serif; letter-spacing: .13em; text-transform: uppercase; margin-bottom: .7rem; }
+    .heading { max-width: 43rem; margin-bottom: 1.8rem; }
+    .skip { position: absolute; left: 1rem; top: -10rem; z-index: 5; background: var(--ink); padding: .6rem; }
+    .skip:focus { top: 1rem; }
+    .site-head { border-bottom: 1px solid var(--rule); }
+    .site-head .wrap, .site-foot .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1.4rem; padding-block: .75rem; }
+    .brand { font: 2.25rem/1 var(--display); text-decoration: none; }
+    .brand em, h1 span { color: var(--gold); }
+    nav { display: flex; flex-wrap: wrap; gap: 0 .85rem; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+    .hero { display: grid; gap: 1.6rem; align-items: center; }
+    .hero .intro { max-width: 30ch; margin-block: .9rem 1.35rem; }
+    .hero img { aspect-ratio: 6 / 5; border-radius: .2rem; }
+    figure .note { margin-top: .4rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .55rem; align-items: center; }
+    .button { display: inline-flex; justify-content: center; align-items: center; border: 1px solid var(--gold); border-radius: .25rem; min-height: 46px; padding: .55rem 1rem; background: var(--gold); color: #20170e; font: 700 1rem/1.25 "Hind Siliguri", system-ui, sans-serif; text-align: center; text-decoration: none; cursor: pointer; transition: background-color .18s ease; }
+    .button:hover { background: #f7d2a6; color: #20170e; }
+    .button.secondary { background: transparent; color: var(--cream); }
+    .button.secondary:hover { background: #352a20; color: var(--cream); }
+    .surface { background: var(--panel); }
+    .grid { display: grid; gap: 1rem 1.5rem; }
+    .tile { border-top: 1px solid var(--rule); padding-block: 1rem; }
+    .tile h3 + p, .tile p + p { margin-top: .35rem; }
+    .service-top { display: flex; justify-content: space-between; gap: .6rem; }
+    .price, .icon, dt { color: var(--gold); font-weight: 600; }
+    .price { white-space: nowrap; }
+    .tile .button { margin-top: .75rem; }
+    .icon { display: block; font-size: 1.75rem; margin-bottom: .4rem; }
+    .gallery img { aspect-ratio: 4 / 3; border-radius: .2rem; }
+    .gallery figcaption { margin-top: .4rem; }
+    .gallery-section { padding-top: 0; }
+    blockquote { font-size: 1.2rem; margin-bottom: .55rem; }
+    .offer { padding: clamp(1rem, 5vw, 3rem); border: 1px solid #977651; border-radius: .3rem; background: linear-gradient(125deg, #35271b, var(--ink)); }
+    .offer .grid { margin-top: 1rem; }
+    .offer .button { margin-top: .75rem; }
+    .booking { align-items: start; }
+    form { display: grid; gap: .8rem; padding: clamp(1rem, 4vw, 1.6rem); border: 1px solid var(--rule); border-radius: .3rem; }
+    label { display: block; font-weight: 600; margin-bottom: .2rem; }
+    input, select { width: 100%; min-width: 0; min-height: 46px; padding: .5rem .65rem; color: var(--cream); background: var(--ink); border: 1px solid #8c7c65; border-radius: .25rem; font: inherit; }
+    details { border-top: 1px solid var(--rule); padding-block: .55rem; }
+    details:last-child { border-bottom: 1px solid var(--rule); }
+    summary { min-height: 44px; padding-block: .5rem; font-weight: 600; cursor: pointer; }
+    details p { padding-block: .2rem .6rem; }
+    .contact-grid { align-items: start; }
+    .contact-grid dl > div + div { margin-top: .65rem; }
+    .contact-grid .actions { margin-top: .9rem; }
+    .map { width: 100%; height: 17rem; display: block; border: 1px solid var(--rule); border-radius: .25rem; background: var(--panel); }
+    .site-foot { border-top: 1px solid var(--rule); }
+    .quick { position: fixed; z-index: 3; inset: auto 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; padding: .6rem 1rem calc(.6rem + env(safe-area-inset-bottom)); background: var(--ink); border-top: 1px solid var(--rule); }
+
+    @media (min-width: 38rem) {
+      .two, .four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (min-width: 52rem) {
+      .wrap { width: min(100% - 4rem, 72rem); }
+      .hero { grid-template-columns: .95fr 1.05fr; gap: 3rem; }
+      .four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .quick { inset: auto 1rem 1rem auto; border: 1px solid var(--rule); border-radius: .35rem; padding: .5rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      :root { scroll-behavior: auto; }
+      .button { transition: none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">মূল কনটেন্টে যান</a>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="#top" lang="en">Studio <em>Adam</em></a>
+      <nav aria-label="মূল নেভিগেশন">
+        <a href="#services">সেবা</a>
+        <a href="#gallery">গ্যালারি</a>
+        <a href="#offers">প্যাকেজ</a>
+        <a href="#faq">সাধারণ প্রশ্ন</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section wrap" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow" lang="en">Men’s salon · Joydebpur, Gazipur</p>
+        <h1 id="hero-title">আপনার স্টাইল।<br><span>আপনার কাট।</span></h1>
+        <p class="intro quiet">অফিসের জন্য পরিপাটি কাট, সপ্তাহান্তের নতুন লুক আর দাড়ির যত্ন। সবই জয়দেবপুরে।</p>
+        <div class="actions">
+          <a class="button" href="#booking">এখনই বুক করুন</a>
+          <a class="button secondary" href="#services">সেবা ও মূল্য দেখুন</a>
+        </div>
+      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" width="1400" height="1167" alt="বারবারশপের ভেতরের পরিবেশ" fetchpriority="high">
+        <figcaption class="note">বারবারশপের নমুনা ছবি</figcaption>
+      </figure>
+    </section>
+
+    <section class="section surface" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="heading">
+          <p class="eyebrow" lang="en">Services &amp; pricing</p>
+          <h2 id="services-title">সেবা ও মূল্য</h2>
+          <p class="note">দাম ও সময় নমুনা হিসেবে দেওয়া। বুকিংয়ের সময় চূড়ান্ত মূল্য ও সময় জেনে নিন।</p>
+        </div>
+        <div class="grid three">
+          <article class="tile">
+            <div class="service-top"><h3>হেয়ারকাট</h3><span class="price">৳৩৫০</span></div>
+            <p class="note"><span lang="en">Haircut</span> · প্রায় ৩০ মিনিট</p>
+            <p>ক্লাসিক কাট, টেপার বা ফেড নিয়ে স্টাইলিস্টের সঙ্গে কথা বলুন।</p>
+            <a class="button secondary" href="#booking" data-service="হেয়ারকাট">হেয়ারকাট বাছুন</a>
+          </article>
+          <article class="tile">
+            <div class="service-top"><h3>দাড়ি ট্রিম</h3><span class="price">৳২০০</span></div>
+            <p class="note"><span lang="en">Beard trim</span> · প্রায় ২০ মিনিট</p>
+            <p>দাড়ির দৈর্ঘ্য, গালের লাইন ও নেকলাইন গুছিয়ে নিন।</p>
+            <a class="button secondary" href="#booking" data-service="দাড়ি ট্রিম">দাড়ি ট্রিম বাছুন</a>
+          </article>
+          <article class="tile">
+            <div class="service-top"><h3>ক্লিন শেভ</h3><span class="price">৳২০০</span></div>
+            <p class="note"><span lang="en">Clean shave</span> · প্রায় ২০ মিনিট</p>
+            <p>পুরো দাড়ি শেভের জন্য সময় রাখুন।</p>
+            <a class="button secondary" href="#booking" data-service="ক্লিন শেভ">ক্লিন শেভ বাছুন</a>
+          </article>
+          <article class="tile">
+            <div class="service-top"><h3>হেয়ার কালার</h3><span class="price">৳৮০০ থেকে</span></div>
+            <p class="note"><span lang="en">Hair colour</span> · সময় স্টাইলভেদে</p>
+            <p>পছন্দের শেড, চুলের দৈর্ঘ্য ও চূড়ান্ত খরচ আগে আলোচনা করুন।</p>
+            <a class="button secondary" href="#booking" data-service="হেয়ার কালার">হেয়ার কালার বাছুন</a>
+          </article>
+          <article class="tile">
+            <div class="service-top"><h3>ফেসিয়াল</h3><span class="price">৳৬৫০ থেকে</span></div>
+            <p class="note"><span lang="en">Facial</span> · প্রায় ৪৫ মিনিট</p>
+            <p>পণ্যে সংবেদনশীলতা থাকলে সেবার আগে জানিয়ে দিন।</p>
+            <a class="button secondary" href="#booking" data-service="ফেসিয়াল">ফেসিয়াল বাছুন</a>
+          </article>
+          <article class="tile">
+            <div class="service-top"><h3>হেড মাসাজ</h3><span class="price">৳৩০০</span></div>
+            <p class="note"><span lang="en">Head massage</span> · প্রায় ২০ মিনিট</p>
+            <p>হেয়ারকাটের সঙ্গে বা আলাদাভাবে সময় চেয়ে নিন।</p>
+            <a class="button secondary" href="#booking" data-service="হেড মাসাজ">হেড মাসাজ বাছুন</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="why-title">
+      <div class="heading">
+        <p class="eyebrow" lang="en">Why Studio Adam</p>
+        <h2 id="why-title">কাটের আগে কথা, কাটের পরে যত্ন</h2>
+      </div>
+      <div class="grid four">
+        <article class="tile"><span class="icon" aria-hidden="true">✂</span><h3>পছন্দের কাট</h3><p class="quiet">চুলের ধরন আর প্রতিদিনের স্টাইল ধরে কাট নিয়ে কথা বলুন।</p></article>
+        <article class="tile"><span class="icon" aria-hidden="true">✧</span><h3>পরিচ্ছন্নতার খেয়াল</h3><p class="quiet">টুলস পরিষ্কার ও প্রস্তুত করার পদ্ধতি নিয়ে স্টাইলিস্টকে জিজ্ঞেস করতে পারেন।</p></article>
+        <article class="tile"><span class="icon" aria-hidden="true">◷</span><h3>সময় আগে ঠিক করুন</h3><p class="quiet">ফোন বা WhatsApp-এ খালি সময় জেনে ভিজিট প্ল্যান করুন।</p></article>
+        <article class="tile"><span class="icon" aria-hidden="true">◎</span><h3>এক ভিজিটে গ্রুমিং</h3><p class="quiet">কাটের সঙ্গে দাড়ি ট্রিম, ফেসিয়াল বা হেড মাসাজের অনুরোধ করুন।</p></article>
+      </div>
+    </section>
+
+    <section class="section gallery-section wrap" id="gallery" aria-labelledby="gallery-title">
+      <div class="heading">
+        <p class="eyebrow" lang="en">Style gallery</p>
+        <h2 id="gallery-title">পরের কাটের জন্য আইডিয়া</h2>
+        <p class="note">স্টাইল ও গ্রুমিংয়ের নমুনা ছবি। পছন্দের লুকটি স্টাইলিস্টকে দেখাতে পারেন।</p>
+      </div>
+      <div class="grid three gallery">
+        <figure><img src="https://images.pexels.com/photos/4625629/pexels-photo-4625629.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" width="800" height="600" loading="lazy" decoding="async" alt="ক্লিপার দিয়ে চুলের পাশ ছোট করার দৃশ্য"><figcaption>হেয়ারকাট <span class="note" lang="en">· Haircut</span></figcaption></figure>
+        <figure><img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" width="800" height="600" loading="lazy" decoding="async" alt="সেলুনে চুল কাটার একটি দৃশ্য"><figcaption>স্টাইলিং <span class="note" lang="en">· Styling</span></figcaption></figure>
+        <figure><img src="https://images.pexels.com/photos/1453005/pexels-photo-1453005.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" width="800" height="600" loading="lazy" decoding="async" alt="পুরুষদের সেলুনে গ্রুমিংয়ের দৃশ্য"><figcaption>গ্রুমিং <span class="note" lang="en">· Grooming</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section surface" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="heading">
+          <p class="eyebrow" lang="en">Client reviews</p>
+          <h2 id="reviews-title">গ্রাহকের অভিজ্ঞতা</h2>
+          <p class="note">নাম ও মন্তব্যগুলো কাল্পনিক নমুনা।</p>
+        </div>
+        <!-- Replace examples with real reviews used with customer permission. -->
+        <div class="grid three">
+          <figure class="tile"><blockquote>“অফিসের জন্য পরিপাটি একটা কাট চেয়েছিলাম। দৈর্ঘ্য যেমন বলেছিলাম, তেমনই রেখেছেন।”</blockquote><figcaption class="note">আরিফ হাসান · নমুনা রিভিউ</figcaption></figure>
+          <figure class="tile"><blockquote>“আগে সময় ঠিক করে গিয়েছিলাম। দাড়ির লাইনটা যেভাবে চেয়েছিলাম, সেভাবেই হয়েছে।”</blockquote><figcaption class="note">তানভীর রহমান · নমুনা রিভিউ</figcaption></figure>
+          <figure class="tile"><blockquote>“ছবিটা দেখানোর পর আমার চুলে কাটটা কেমন হবে, সেটা বুঝিয়ে বলেছিলেন।”</blockquote><figcaption class="note">সামিউল ইসলাম · নমুনা রিভিউ</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="offers" aria-labelledby="offers-title">
+      <div class="offer">
+        <p class="eyebrow" lang="en">Grooming packages</p>
+        <h2 id="offers-title">একসঙ্গে কয়েকটি সেবা</h2>
+        <p class="note">নমুনা প্যাকেজ ও মূল্য। বর্তমান অফার জানতে যোগাযোগ করুন।</p>
+        <div class="grid two">
+          <article class="tile"><h3>কাট + দাড়ি ট্রিম</h3><p>হেয়ারকাট ও দাড়ি ট্রিম <span class="price">· ৳৫০০</span></p><a class="button" href="#booking" data-service="কাট + দাড়ি ট্রিম প্যাকেজ">প্যাকেজ সম্পর্কে জানুন</a></article>
+          <article class="tile"><h3>কাট + ফেসিয়াল</h3><p>হেয়ারকাট ও ফেসিয়াল <span class="price">· ৳৯০০ থেকে</span></p><a class="button secondary" href="#booking" data-service="কাট + ফেসিয়াল প্যাকেজ">প্যাকেজ সম্পর্কে জানুন</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface" aria-labelledby="visit-title">
+      <div class="wrap">
+        <div class="heading"><p class="eyebrow" lang="en">Your first visit</p><h2 id="visit-title">প্রথমবার আসছেন?</h2></div>
+        <div class="grid two">
+          <article class="tile">
+            <h3>স্টাইলিস্টের সঙ্গে কথা বলুন</h3>
+            <!-- Add verified stylist names, portraits, and specialties here. -->
+            <p>আপনি কী ধরনের কাট চান, চুল কতটা ছোট রাখতে চান এবং বাড়িতে কীভাবে স্টাইল করেন, সেটা বলুন। নির্দিষ্ট স্টাইলিস্ট চাইলে বুকিংয়ের সময় জানাতে পারেন।</p>
+          </article>
+          <article class="tile">
+            <h3>যা সঙ্গে রাখলে সুবিধা হবে</h3>
+            <p>পছন্দের কাটের এক-দুটি ছবি রাখুন। কোনো পণ্যে সংবেদনশীলতা থাকলে আগে জানান। কাজ শেষে বাড়িতে কাটটি কীভাবে সাজাবেন, তা জেনে নিতে পারেন।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="team-title">
+      <div class="heading">
+        <p class="eyebrow" lang="en">Stylists &amp; aftercare</p>
+        <h2 id="team-title">স্টাইলিস্ট বাছাই ও কাটের পরের যত্ন</h2>
+      </div>
+      <div class="grid two">
+        <article class="tile">
+          <h3>আপনার পছন্দের স্টাইলিস্ট</h3>
+          <!-- Add a verified portrait, name, and specialty for each stylist here. -->
+          <p>ফেড, কাঁচির কাট বা দাড়ির শেপিংয়ের জন্য কোন স্টাইলিস্ট পাওয়া যাবে, সরাসরি জেনে নিন।</p>
+          <a class="button secondary" href="https://wa.me/8801798587816?text=Hello%20Studio%20Adam%2C%20which%20stylists%20are%20available%20for%20my%20next%20visit%3F">স্টাইলিস্টের সময় জানতে চান</a>
+        </article>
+        <article class="tile">
+          <h3>বাড়িতে লুকটি ধরে রাখুন</h3>
+          <p>চুল কোন দিকে আঁচড়াবেন, কতটুকু স্টাইলিং প্রোডাক্ট লাগবে আর কবে আবার ট্রিম করানো ভালো, কাট শেষে জেনে নিন।</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surface" id="booking" aria-labelledby="booking-title">
+      <div class="wrap grid two booking">
+      <div>
+        <p class="eyebrow" lang="en">Request an appointment</p>
+        <h2 id="booking-title">সময়ের অনুরোধ পাঠান</h2>
+        <p class="quiet">সেবা বেছে নিন। চাইলে পছন্দের দিন ও সময় লিখুন। WhatsApp-এ মেসেজটি নিজে পাঠানোর পর সেলুনের জবাবে সময় নিশ্চিত হবে।</p>
+        <p><a href="tel:+8801798587816">ফোনে বুকিংয়ের জন্য কল করুন</a></p>
+      </div>
+      <form id="booking-form" aria-describedby="booking-note">
+        <div>
+          <label for="service">সেবা / <span lang="en">Service</span></label>
+          <select id="service" name="service" required>
+            <option value="">সেবা বেছে নিন</option>
+            <option>হেয়ারকাট</option>
+            <option>দাড়ি ট্রিম</option>
+            <option>ক্লিন শেভ</option>
+            <option>হেয়ার কালার</option>
+            <option>ফেসিয়াল</option>
+            <option>হেড মাসাজ</option>
+            <option>কাট + দাড়ি ট্রিম প্যাকেজ</option>
+            <option>কাট + ফেসিয়াল প্যাকেজ</option>
+          </select>
+        </div>
+        <div class="grid two">
+          <div><label for="visit-date">পছন্দের তারিখ</label><input id="visit-date" name="date" type="date" aria-label="পছন্দের তারিখ, ঐচ্ছিক"></div>
+          <div><label for="visit-time">পছন্দের সময়</label><input id="visit-time" name="time" type="time" aria-label="পছন্দের সময়, ঐচ্ছিক"></div>
+        </div>
+        <p class="note" id="booking-note">তারিখ ও সময় ঐচ্ছিক। ফর্মের তথ্য দিয়ে আপনার ডিভাইসে WhatsApp মেসেজ তৈরি হবে।</p>
+        <button class="button" type="submit">WhatsApp-এ মেসেজ তৈরি করুন</button>
+        <noscript><p>ফর্মের জন্য JavaScript চালু করুন অথবা <a href="https://wa.me/8801798587816">সরাসরি WhatsApp খুলুন</a>।</p></noscript>
+      </form>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap grid two">
+        <div><p class="eyebrow" lang="en">FAQ</p><h2 id="faq-title">সাধারণ প্রশ্ন</h2></div>
+        <div>
+          <details><summary>আগে থেকে বুকিং করতে হবে?</summary><p class="quiet">আপনার পছন্দের সময়ে আসতে চাইলে আগে খালি সময় জেনে নিন। সরাসরি আসতে চাইলে সেদিনের অপেক্ষার সময় ফোনে জেনে নিতে পারেন।</p></details>
+          <details><summary>কীভাবে বুঝব বুকিং নিশ্চিত হয়েছে?</summary><p class="quiet">সেলুন থেকে আপনার দিন ও সময় নিশ্চিত করার উত্তর পেলে বুকিং চূড়ান্ত হবে।</p></details>
+          <details><summary>বুকিংয়ের সময় বদলাতে চাইলে কী করব?</summary><p class="quiet">আগের বুকিংয়ের দিন ও সময় জানিয়ে ফোন বা WhatsApp-এ নতুন সময় চান।</p></details>
+          <details><summary>হেয়ার কালারের চূড়ান্ত দাম কীভাবে জানব?</summary><p class="quiet">চুলের দৈর্ঘ্য ও পছন্দের শেড জানিয়ে মূল্য জিজ্ঞেস করুন। চাইলে চুলের বর্তমান অবস্থা ও পছন্দের শেডের ছবি WhatsApp-এ শেয়ার করতে পারেন।</p></details>
+          <details><summary>কীভাবে পেমেন্ট করতে পারব?</summary><p class="quiet">ক্যাশ, কার্ড বা মোবাইল পেমেন্টের কোন পদ্ধতি নেওয়া হয়, ভিজিটের আগে জেনে নিন।</p></details>
+          <details><summary>বন্ধের সময় বা সাপ্তাহিক ছুটি কবে?</summary><p class="quiet">খোলার সময় সকাল ৯টা। বন্ধের সময়, সাপ্তাহিক ছুটি ও ছুটির দিনের সময়সূচি ফোনে জেনে নিন।</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+      <div class="heading"><p class="eyebrow" lang="en">Visit Studio Adam</p><h2 id="contact-title">যোগাযোগ ও লোকেশন</h2></div>
+      <div class="grid two contact-grid">
+        <div>
+          <dl>
+            <div><dt>ফোন / <span lang="en">Phone</span></dt><dd><a href="tel:+8801798587816">০১৭৯৮৫৮৭৮১৬</a></dd></div>
+            <!-- Add the verified street address and landmark here. -->
+            <div><dt>ঠিকানা / <span lang="en">Address</span></dt><dd>জয়দেবপুর, গাজীপুর</dd><dd class="note">বিস্তারিত ঠিকানা ও কাছের ল্যান্ডমার্ক জানতে কল করুন।</dd></div>
+            <div><dt>খোলার সময় / <span lang="en">Opening time</span></dt><dd>সকাল ৯:০০</dd></div>
+          </dl>
+          <div class="actions">
+            <a class="button" href="#booking">বুকিং ফর্মে যান</a>
+            <a class="button secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Joydebpur%2C%20Gazipur%2C%20Bangladesh">এলাকার ম্যাপ খুলুন</a>
+          </div>
+        </div>
+        <figure>
+          <!-- Replace the map URLs and caption with the verified salon pin. -->
+          <iframe class="map" title="জয়দেবপুর, গাজীপুর এলাকার মানচিত্র" src="https://maps.google.com/maps?q=Joydebpur%2C%20Gazipur%2C%20Bangladesh&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption class="note">মানচিত্রে জয়দেবপুর এলাকা দেখানো হয়েছে।</figcaption>
+        </figure>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <a class="brand" href="#top" lang="en">Studio <em>Adam</em></a>
+      <nav aria-label="ফুটার নেভিগেশন"><a href="#services">সেবা</a><a href="#faq">সাধারণ প্রশ্ন</a><a href="#contact">লোকেশন</a></nav>
+      <!-- Replace these labels with links to the official social profiles. -->
+      <p class="note"><span lang="en">Facebook / Instagram</span> · লিংক যোগ হবে</p>
+    </div>
+  </footer>
+
+  <aside class="quick" aria-label="দ্রুত যোগাযোগ">
+    <a class="button secondary" href="tel:+8801798587816">কল করুন</a>
+    <a class="button" href="https://wa.me/8801798587816" lang="en">WhatsApp</a>
+  </aside>
+
+  <script>
+    const form = document.querySelector("#booking-form");
+    const serviceInput = document.querySelector("#service");
+    const dateInput = document.querySelector("#visit-date");
+    const timeInput = document.querySelector("#visit-time");
+    const dhakaTimeZone = "Asia/Dhaka";
+
+    const todayParts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: dhakaTimeZone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    }).formatToParts();
+    const today = Object.fromEntries(todayParts.map(({ type, value }) => [type, value]));
+    dateInput.min = [today.year, today.month, today.day].join("-");
+
+    document.querySelectorAll("[data-service]").forEach((link) => {
+      link.addEventListener("click", () => {
+        serviceInput.value = link.dataset.service;
+      });
+    });
+
+    function formatVisitDate(value) {
+      return new Intl.DateTimeFormat("bn-BD", {
+        dateStyle: "long",
+        timeZone: dhakaTimeZone
+      }).format(new Date(value + "T12:00:00+06:00"));
+    }
+
+    function formatVisitTime(value) {
+      return new Intl.DateTimeFormat("bn-BD", {
+        timeStyle: "short",
+        timeZone: dhakaTimeZone
+      }).format(new Date("2000-01-01T" + value + ":00+06:00"));
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const lines = [
+        "হ্যালো Studio Adam! একটি অ্যাপয়েন্টমেন্টের জন্য খালি সময় জানতে চাই।",
+        "সেবা: " + serviceInput.value
+      ];
+      if (dateInput.value) lines.push("পছন্দের তারিখ: " + formatVisitDate(dateInput.value));
+      if (timeInput.value) lines.push("পছন্দের সময়: " + formatVisitTime(timeInput.value));
+      lines.push("চূড়ান্ত মূল্য ও খালি সময় জানাবেন?");
+
+      const url = new URL("https://wa.me/8801798587816");
+      url.searchParams.set("text", lines.join("\n"));
+      window.location.assign(url.href);
+    });
+  </script>
+</body>
+</html>
